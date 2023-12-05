@@ -1,0 +1,153 @@
+/* Sign in page styling */
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Semi+Condensed:wght@100&family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Dancing+Script:wght@500&family=Dongle:wght@300&family=Great+Vibes&family=Inconsolata:wght@200&family=Mynerve&family=Noto+Sans:wght@700&family=Oswald:wght@200&family=Pacifico&family=Quintessential&family=Qwitcher+Grypen&family=Ysabeau+Infant:wght@1&display=swap");
+.signup_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: rgba(211, 211, 211, 0.5);
+  height: 100vh;
+}
+.signup_div {
+  display: flex;
+  flex-direction: column;
+  max-height: 700px;
+  width: 500px;
+  background-color: #fff;
+  margin-top: 150px;
+  border-radius: 15px 15px;
+}
+.signupform {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 50px;
+}
+.signupform input {
+  padding: 5px 0.7rem;
+  background: transparent;
+  border: 1px solid #1877f2;
+  border-radius: 5px;
+  margin-top: 2px;
+}
+.ext_account {
+  text-align: center;
+}
+.ext_account p {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+input::placeholder {
+  font-size: 1rem;
+}
+label {
+  font-size: 16px;
+  font-weight: 300px;
+  margin-top: 5px;
+}
+.select-options {
+  padding: 5px 20px;
+  border: 1px solid #1877f2;
+  border-radius: 5px;
+  margin-top: 3px;
+}
+.submit-btn {
+  padding: 5px 150px;
+  border: 2px;
+  border-radius: 5px;
+  margin-left: 20px;
+  color: white;
+  margin-top: 10px;
+  background-color: #1877f2;
+}
+.agreement-text {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.signupform legend {
+  text-align: center;
+}
+.match {
+  display: none;
+}
+.no-match {
+  display: block;
+  font-size: 0.7rem;
+  font-style: italic;
+  color: red;
+  position: absolute;
+  top: 662px;
+  z-index: 1;
+}
+.filled {
+  display: none;
+}
+.un-filled {
+  display: block;
+  text-align: center;
+  font-size: 0.6rem;
+  font-style: italic;
+  color: red;
+  position: absolute;
+  top: 710px;
+  z-index: 1;
+}
+/* Styling the signIn page */
+
+.sign-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+.form-div {
+  height: 400px;
+  width: 400px;
+  padding: 20px;
+  border: 2px solid transparent;
+  background-color: #fff;
+  border-radius: 5px 5px;
+}
+.label {
+  color: black;
+}
+.signIn-tag {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-family: "Pacifico", cursive;
+}
+.create_acc_div {
+  text-align: center;
+  border: 0.5px solid black;
+  border-radius: 10px 10px;
+  height: 30px;
+  font-style: oblique;
+}
+.create_acc_div p {
+  color: black;
+}
+.new-to-chopify {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 15px;
+}
+.line {
+  border-top: 1px solid black;
+  width: 100px;
+}
+.submit_btn {
+  padding: 5px 150px;
+  border: 2px;
+  border-radius: 5px;
+  /* margin-left: 20px; */
+  color: white;
+  margin-top: 10px;
+  background-color: #1877f2;
+}

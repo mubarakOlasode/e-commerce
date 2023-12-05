@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Semi+Condensed:wght@100&family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Dancing+Script:wght@500&family=Dongle:wght@300&family=Great+Vibes&family=Inconsolata:wght@200&family=Mynerve&family=Noto+Sans:wght@700&family=Oswald:wght@200&family=Quintessential&family=Qwitcher+Grypen&family=Ysabeau+Infant:wght@1&display=swap");
+.navbar-con {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.bgdark {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.search-form {
+  margin-left: auto;
+  margin-right: 0px;
+}
+.changing-img {
+  margin-top: 80px;
+  height: 200px;
+  max-width: 100%;
+}
+.changing-img img {
+  height: 100%;
+  width: 100%;
+}
+.product_div {
+  background-color: rgba(203, 216, 216, 0.5);
+  margin-bottom: 10px;
+}
+/* .product_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: black;
+  margin-top: 40px;
+} */
+.product_container {
+  display: grid;
+  justify-items: stretch;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 280px));
+  grid-template-rows: 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  /* background-color: black; */
+  margin: 0 auto;
+}
+.product-link {
+  text-decoration: none;
+}
+.product_article {
+  background-color: #fff;
+  color: black;
+  height: 400px;
+  width: 280px;
+  border: 2px transparent;
+  border-radius: 5px 5px;
+  padding: 0px 10px;
+  box-shadow: brown;
+}
+/* .img_div {
+  max-height: 400px;
+  max-width: 500px;
+  margin-top: 30px;
+}
+.img_div img {
+  height: 50%;
+  width: 100%;
+} */
+.product_title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
+  text-transform: lowercase;
+}
+.product_title::first-letter {
+  text-transform: capitalize;
+}
+.img_desc {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+.img_desc::first-letter {
+  text-transform: capitalize;
+}
+.product_article p {
+  font-size: 1rem;
+  margin-top: 20px;
+  font-family: "Quintessential", cursive;
+}
+.btnBuy {
+  padding: 2px 20px;
+}
+
+/* Styling Pagination */
+
+.pagination_section {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}

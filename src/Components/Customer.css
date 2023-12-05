@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Alata&family=Barlow+Semi+Condensed:wght@100&family=Bricolage+Grotesque&family=Dancing+Script:wght@500&family=Dongle:wght@300&family=Edu+TAS+Beginner&family=Gluten:wght@200&family=Great+Vibes&family=Inconsolata:wght@200&family=Libre+Baskerville&family=Mynerve&family=Noto+Sans+JP:wght@800&family=Noto+Sans:wght@700&family=Quintessential&family=Sedgwick+Ave+Display&family=Tulpen+One&family=Ysabeau+Infant:wght@1&display=swap");
+
+.customer-initial {
+  font-size: 1rem;
+  color: white;
+  /* border: 5px solid green; */
+  background-color: green;
+  border-radius: 50%;
+  padding: 3px 10px;
+}
+.logout_ul {
+  width: 100%;
+  justify-content: flex-end;
+}
+.logout_ul li {
+  margin-left: 20px;
+}
+.counter {
+  margin-bottom: 0px;
+}
+.nav-container {
+  height: 50px;
+}
+.nav-user {
+  color: white;
+  font-size: 2rem;
+  margin-top: 20px;
+  font-family: "Agbalumo", sans-sherif;
+}
+.section-container {
+  margin-top: 60px;
+}
+.product_article {
+  box-shadow: -10px 10px 4px #000;
+}
+.sign-out {
+  padding: 5px 15px;
+  border: 0px transparent;
+  border-radius: 15px;
+  background-color: #1877f2;
+  color: white;
+  font-size: 0.9rem;
+}
+.btnBuy {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: #000;
+  color: white;
+  font-family: "Edu TAS Beginner", sans-sherif;
+}

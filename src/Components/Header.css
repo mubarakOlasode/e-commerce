@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Semi+Condensed:wght@100&family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Dancing+Script:wght@500&family=Dongle:wght@300&family=Great+Vibes&family=Inconsolata:wght@200&family=Mynerve&family=Noto+Sans:wght@700&family=Oswald:wght@200&family=Pacifico&family=Playfair+Display&family=Quintessential&family=Qwitcher+Grypen&family=Ysabeau+Infant:wght@1&display=swap");
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+.signIn-btn {
+  /* color: white; */
+  font-family: "Playfair Display", serif;
+  padding: 5px 50px;
+}
+.link {
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: none;
+}
+link:active {
+  color: grey;
+}
+.link:visited {
+  color: red;
+}
