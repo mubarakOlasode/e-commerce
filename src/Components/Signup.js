@@ -53,7 +53,7 @@ const Signup = () => {
   };
   const handleClick = async (e) => {
     e.preventDefault();
-    const url = "http://localhost:5000/signup";
+    const url = "https://chopifyreact.nn.r.appspot.com/signup";
     if (
       userData.name.length > 0 &&
       userData.surname.length > 0 &&

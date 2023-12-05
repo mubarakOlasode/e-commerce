@@ -28,7 +28,7 @@ const SignIn = ({ onRoute, routeBuy }) => {
       password: password,
     };
 
-    const url = "http://localhost:5000/signIn";
+    const url = "https://chopifyreact.nn.r.appspot.com/signIn";
     const response = await fetch(url, {
       method: "POST",
       headers: { "Content-Type": "application/json" },

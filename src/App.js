@@ -8,6 +8,7 @@ import Products from "./Components/Products";
 import SignIn from "./Components/SignIn";
 import Customer from "./Components/Customer";
 import ProductHeader from "./Components/ProductHeader";
+import { client_id } from "./keys";
 import CustomerHeader from "./Components/CustomerHeader";
 
 class App extends Component {
@@ -28,7 +29,7 @@ class App extends Component {
     const api_data = [];
     const page = this.state.page;
 
-    const url = `https://api.unsplash.com/search/collections?page=${page}&query=sneakers&per_page=14&client_id=LgocMLSLobQg_g8tXus5lxr9kxk9xSWO-y4-xdspFXc`;
+    const url = `https://api.unsplash.com/search/collections?page=${page}&query=sneakers&per_page=14&client_id=${client_id}`;
 
     const response = await fetch(url);
     const data = await response.json();
@@ -105,7 +106,7 @@ class App extends Component {
         <Routes>
           <Route
             exact
-            path="/"
+            path="e-commerce/"
             element={
               <Home text="Explore product" onRoute={this.onRouteChange} />
             }

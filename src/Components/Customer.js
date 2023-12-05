@@ -1,5 +1,5 @@
-import { useId, useRef, useState, useEffect } from "react";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { useId, useRef, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 import "./Customer.css";
 

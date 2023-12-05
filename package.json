@@ -1,5 +1,6 @@
 {
   "name": "e-commerce",
+  "homepage": "https://mubarakOlasode.github.io/e-commerce",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,8 +16,10 @@
     "body-parser": "^1.20.2",
     "bootstrap": "^5.3.1",
     "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "font": "^0.0.4",
+    "gh-pages": "^6.1.0",
     "knex": "^2.5.1",
     "nodemon": "^3.0.1",
     "pg": "^8.11.3",
@@ -31,7 +34,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
