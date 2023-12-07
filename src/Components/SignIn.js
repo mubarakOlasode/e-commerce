@@ -7,6 +7,7 @@ const SignIn = ({ onRoute, routeBuy }) => {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [errorMessage, setErrorMessage] = useState(false);
 
   let location = useLocation();
   useEffect(() => {
@@ -44,9 +45,11 @@ const SignIn = ({ onRoute, routeBuy }) => {
       routeBuy(true);
       navigate("/Customer");
     } else {
+      setErrorMessage(true);
       navigate("/SignIn");
     }
   };
+
   return (
     <div className="sign-container">
       <div className="signIn-tag">Chopify</div>
@@ -90,6 +93,9 @@ const SignIn = ({ onRoute, routeBuy }) => {
             Submit
           </button>
         </form>
+        <div className={errorMessage ? "errorMessage" : "no-error"}>
+          <p>This account is not found, please check your email or password </p>
+        </div>
         <div className="new-to-chopify">
           <div className="line"></div>
           <div>

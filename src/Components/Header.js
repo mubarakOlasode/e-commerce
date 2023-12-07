@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
+import { faUserPlus, faHouse } from "@fortawesome/free-solid-svg-icons";
+import { faAddressBook } from "@fortawesome/free-regular-svg-icons";
+import { FaPhoneAlt } from "react-icons/fa";
+
 import "./Header.css";
 
 const Header = ({ onRoute }) => {
@@ -23,9 +26,10 @@ const Header = ({ onRoute }) => {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <Link to="/" className="link">
+              <Link to="e-commerce/" className="link">
                 <li className="nav-item ">
                   <p className="nav-link active" aria-current="page">
+                    <FontAwesomeIcon icon={faHouse} />
                     Home
                   </p>
                 </li>
@@ -36,6 +40,23 @@ const Header = ({ onRoute }) => {
                   <p className="nav-link active">
                     register
                     <FontAwesomeIcon icon={faUserPlus} />
+                  </p>
+                </li>
+              </Link>
+              <Link to="/signup" className="link">
+                <li className="nav-item">
+                  <p className="nav-link active">
+                    Who we are
+                    <FontAwesomeIcon icon={faAddressBook} />
+                  </p>
+                </li>
+              </Link>
+              <Link to="/signup" className="link">
+                <li className="nav-item">
+                  <p className="nav-link active">
+                    <FaPhoneAlt />
+                    Contact Us
+                    <FontAwesomeIcon icon="fa-regular fa-address-book" />
                   </p>
                 </li>
               </Link>

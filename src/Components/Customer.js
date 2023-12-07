@@ -1,5 +1,6 @@
 import { useId, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import Products from "./Products";
 
 import "./Customer.css";
 
@@ -23,7 +24,16 @@ const Customer = ({
 
   return (
     <div>
-      <section className="section-container">
+      <Products
+        value={"Add to cart"}
+        // userSearch={userSearch}
+        handleClickNxt={handleClickNxt}
+        handleClickPrev={handleClickPrev}
+        photos_data={photos_data}
+        onRoute={onRoute}
+        // buyButton={buyButton}
+      />
+      {/* <section className="section-container">
         <section className="product_div">
           <div className="product_container">
             {photos_data.map((image) => {
@@ -83,7 +93,7 @@ const Customer = ({
             </ul>
           </nav>
         </section>
-      </section>
+      </section> */}
     </div>
   );
 };

@@ -76,8 +76,10 @@ class App extends Component {
   componentDidMount() {
     this.fetchApi();
   }
-  componentDidUpdate() {
-    this.fetchApi();
+  async componentDidUpdate(prevProps, prevState) {
+    if (prevState.page !== this.state.page) {
+      this.fetchApi();
+    }
   }
   render() {
     const {
@@ -101,6 +103,7 @@ class App extends Component {
             name={name}
             onRoute={this.onRouteChange}
             getCustomerName={getCustomerName}
+            routeBuy={routeBuy}
           />
         )}
         <Routes>

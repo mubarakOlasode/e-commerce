@@ -6,19 +6,19 @@ import { AiOutlineHome } from "react-icons/ai";
 import { BsCart4 } from "react-icons/bs";
 import "./Customer.css";
 
-const CustomerHeader = ({ name, getCustomerName, onRoute }) => {
+const CustomerHeader = ({ name, getCustomerName, onRoute, routeBuy }) => {
   const [userlname, setUserlname] = useState("");
   const settingUserlname = (props) => {
     setUserlname(props);
   };
-  let count = 0;
+  // let count = 0;
   const navigate = useNavigate();
-  const [counter, setCounter] = useState(0);
-  const getParams = (e) => {
-    count++;
-    setCounter(count);
-    // const {className,}= ref.current;
-  };
+  // const [counter, setCounter] = useState(0);
+  // const getParams = (e) => {
+  //   count++;
+  //   setCounter(count);
+  //   // const {className,}= ref.current;
+  // };
   useEffect(() => {
     let userName = localStorage.getItem("name");
     let userlname = localStorage.getItem("userlname");
@@ -30,15 +30,16 @@ const CustomerHeader = ({ name, getCustomerName, onRoute }) => {
     e.preventDefault();
     localStorage.removeItem("name");
     localStorage.removeItem("userlname");
+    routeBuy(false);
     getCustomerName("");
     settingUserlname("");
-    navigate("/");
+    navigate("e-commerce/");
   };
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bgdark nav-container">
-        <div className="navbar-con">
-          <Link to="/">
+        <div className="navbar-con container-fluid">
+          <Link to="e-commerce/">
             <p
               onClick={() => onRoute("home")}
               className="navbar-brand"
@@ -76,12 +77,14 @@ const CustomerHeader = ({ name, getCustomerName, onRoute }) => {
             </ul>
           </div>
           <div>
-            <p className="nav-user">Welcome {userlname}</p>
+            <p className="nav-user">
+              Welcome <span>{userlname}</span>
+            </p>
           </div>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 logout_ul">
               <li className="nav-item nav-link active">
-                {counter}
+                {/* {counter} */}
                 <BsCart4 />
               </li>
               <li className="nav-item nav-link active">
@@ -99,6 +102,12 @@ const CustomerHeader = ({ name, getCustomerName, onRoute }) => {
             </ul>
           </div>
         </div>
+      </nav>
+      <nav className="nav2">
+        <p>
+          We are thankful to all our customers, your satisfaction is our
+          aspiration
+        </p>
       </nav>
     </div>
   );

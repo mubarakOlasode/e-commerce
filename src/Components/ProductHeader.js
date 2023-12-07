@@ -10,15 +10,14 @@ const ProductHeader = ({ handleSearch }) => {
     <div>
       <section>
         <nav class="navbar navbar-expand-lg navbar-dark bgdark">
-          <div className="navbar-con">
-            <Link to="/">
+          <div className="navbar-con container-fluid">
+            <Link to="e-commerce/" className="navbar-brand">
               <p className="navbar-brand" style={{ fontSize: 30 }}>
                 <AiOutlineHome />
               </p>
             </Link>
-
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -26,9 +25,9 @@ const ProductHeader = ({ handleSearch }) => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item nav-link active">
                   Men
@@ -44,7 +43,9 @@ const ProductHeader = ({ handleSearch }) => {
                 </li>
               </ul>
               <div>
-                <p class="navbar-brand">Putting a smile on your face</p>
+                <p class="navbar-brand product-header-text">
+                  Putting a smile on your face
+                </p>
               </div>
               <form className="d-flex search-form">
                 <input

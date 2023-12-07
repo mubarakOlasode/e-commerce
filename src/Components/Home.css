@@ -38,3 +38,22 @@ html {
   background-color: black;
   color: white;
 }
+@media only screen and (max-width: 450px) {
+  .text-div h1 {
+    font-size: 2rem;
+    margin-bottom: 0px;
+  }
+  .text-div span {
+    font-size: 1.5rem;
+    margin-top: 0px;
+  }
+  .text-div input {
+    border: 0px transparent;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 2px 20px;
+    font-size: 0.8rem;
+  }
+}
