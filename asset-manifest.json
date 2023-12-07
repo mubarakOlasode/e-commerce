@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/e-commerce/static/css/main.1892a1f8.css",
-    "main.js": "/e-commerce/static/js/main.e36c7e34.js",
+    "main.css": "/e-commerce/static/css/main.9969c649.css",
+    "main.js": "/e-commerce/static/js/main.26ea332b.js",
     "static/js/787.46493d11.chunk.js": "/e-commerce/static/js/787.46493d11.chunk.js",
     "static/media/Black-sand.jpg": "/e-commerce/static/media/Black-sand.755f1a40882d562dcdd0.jpg",
     "static/media/branislav-belko-lJ7iAZxplpc-unsplash.jpg": "/e-commerce/static/media/branislav-belko-lJ7iAZxplpc-unsplash.ce3cfa334c4b72b8fd33.jpg",
     "static/media/danilo-capece-NoVnXXmDNi0-unsplash.jpg": "/e-commerce/static/media/danilo-capece-NoVnXXmDNi0-unsplash.1e08fb8ca483f7a8e9bc.jpg",
     "index.html": "/e-commerce/index.html",
-    "main.1892a1f8.css.map": "/e-commerce/static/css/main.1892a1f8.css.map",
-    "main.e36c7e34.js.map": "/e-commerce/static/js/main.e36c7e34.js.map",
+    "main.9969c649.css.map": "/e-commerce/static/css/main.9969c649.css.map",
+    "main.26ea332b.js.map": "/e-commerce/static/js/main.26ea332b.js.map",
     "787.46493d11.chunk.js.map": "/e-commerce/static/js/787.46493d11.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1892a1f8.css",
-    "static/js/main.e36c7e34.js"
+    "static/css/main.9969c649.css",
+    "static/js/main.26ea332b.js"
   ]
 }
